@@ -62,6 +62,7 @@ if ( !class_exists( 'TVJussieu_Staff' ) ) {
 					//'author',
 					'thumbnail',
 					'comments',
+					'revisions',
 				),
 				'show_ui' => true,
 				'show_in_menu' => true,

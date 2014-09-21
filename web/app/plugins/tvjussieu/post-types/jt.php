@@ -233,6 +233,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 					//'author',
 					'thumbnail',
 					'comments',
+					'revisions',
 				),
 				'show_ui' => true,
 				'show_in_menu' => true,

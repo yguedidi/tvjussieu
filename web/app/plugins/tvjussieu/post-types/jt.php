@@ -308,6 +308,10 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 				return $data;
 			}
 
+			if ( !isset( $postarr['jt_season'] ) || !isset( $postarr['jt_type'] ) ) {
+				return $data;
+			}
+
 			$data['post_name'] = $postarr['jt_season'] . '-' . $postarr['jt_type'];
 			if ( 'jt' === $postarr['jt_type'] ) {
 				$data['post_name'] .= '-' . ( (int) $postarr['jt_n'] );
@@ -412,7 +416,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 			$n = get_post_meta( $post->ID, self::POST_TYPE . '_n', true );
 			$video = get_post_meta( $post->ID, self::POST_TYPE . '_video', true );
 
-			include( get_stylesheet_directory() . '/partials/detail_meta_box-' . self::POST_TYPE . '.php');
+			include( dirname( __DIR__ ) . '/partials/detail_meta_box-' . self::POST_TYPE . '.php');
 		}
 
 		public function create_taxonomies()

@@ -109,7 +109,7 @@ if ( !class_exists( 'TVJussieu_Staff' ) ) {
 			$role = get_post_meta( $post->ID, 'staff_role', true );
 			$facebook = get_post_meta( $post->ID, 'staff_facebook', true );
 
-			include( get_stylesheet_directory() . '/partials/detail_meta_box-' . self::POST_TYPE . '.php');
+			include( dirname( __DIR__ ) . '/partials/detail_meta_box-' . self::POST_TYPE . '.php');
 		}
 
 		public function validate_meta( $data, $postarr )

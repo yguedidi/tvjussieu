@@ -87,7 +87,7 @@ if ( !class_exists( 'TVJussieu_Staff' ) ) {
 		public function add_meta_boxes()
 		{
 			add_meta_box(
-				self::POST_TYPE . '_meta_box', __( 'Détail du staff', 'tvjussieu' ), array($this, 'add_detail_meta_box'), self::POST_TYPE
+				self::POST_TYPE . '_meta_box', __( 'Détail du staff', 'tvjussieu' ), array($this, 'add_detail_meta_box'), self::POST_TYPE, 'side', 'high'
 			);
 		}
 

@@ -16,6 +16,9 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 		{
 			add_filter( 'post_type_link', array($this, 'jt_link'), 10, 3 );
 			add_rewrite_rule(
+				self::SLUG . '/([^/]+)/betisier/?$', 'index.php?post_type=' . self::POST_TYPE . '&name=$matches[1]-betisier', 'top'
+			);
+			add_rewrite_rule(
 				self::SLUG . '/([^/]+)/jt-([0-9]+)-([^/]+)/?$', 'index.php?post_type=' . self::POST_TYPE . '&name=$matches[1]-jt-$matches[2]-$matches[3]', 'top'
 			);
 			add_rewrite_rule(

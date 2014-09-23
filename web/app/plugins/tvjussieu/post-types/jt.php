@@ -362,7 +362,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 					$post = get_post( $post_id );
 					$upload_dir = wp_upload_dir();
 					$image_data = file_get_contents($image_url);
-					$filename   = $post->post_name . '.jpg';
+					$filename   = $code . '.jpg';
 
 					if( wp_mkdir_p( $upload_dir['path'] ) ) {
 						$file = $upload_dir['path'] . '/' . $filename;

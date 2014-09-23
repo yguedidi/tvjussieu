@@ -59,7 +59,8 @@
 	<?php endif; // End is_singular() ?>
 	</div>
 
-	<?php if ( is_search() || is_front_page() || is_archive() ) : ?>
+	<?php if ( is_front_page() ) : ?>
+	<?php elseif ( is_search() || is_front_page() || is_archive() ) : ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

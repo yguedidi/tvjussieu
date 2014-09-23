@@ -351,7 +351,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 				if ( $_POST['jt_video'] ) {
 					if ( preg_match('#^https?:\/\/www\.youtube\.com\/watch\?v\=(.*)#', $_POST['jt_video'], $matches) ) {
 						$code = $matches[1];
-						$image_url = 'http://img.youtube.com/vi/' . $code . '/sddefault.jpg';
+						$image_url = 'http://img.youtube.com/vi/' . $code . '/maxresdefault.jpg';
 					} elseif( preg_match('#^https?:\/\/www\.dailymotion\.com\/video\/([^_]+).*#', $_POST['jt_video'], $matches) ) {
 						$code = $matches[1];
 						$image_url = 'http://www.dailymotion.com/thumbnail/video/' . $code;

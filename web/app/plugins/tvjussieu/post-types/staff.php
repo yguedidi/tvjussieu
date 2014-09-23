@@ -59,7 +59,7 @@ if ( !class_exists( 'TVJussieu_Staff' ) ) {
 					'title',
 					'excerpt',
 					'editor',
-					//'author',
+					'author',
 					'thumbnail',
 					'comments',
 					'revisions',

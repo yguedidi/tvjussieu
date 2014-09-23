@@ -230,7 +230,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 					'title',
 					'excerpt',
 					'editor',
-					//'author',
+					'author',
 					'thumbnail',
 					'comments',
 					'revisions',

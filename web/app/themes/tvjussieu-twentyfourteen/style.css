@@ -15,3 +15,19 @@ Text Domain: tvjussieu
 .site-description {
     /*display: none;*/
 }
+
+@media screen and (min-width: 846px) {
+    .full-width .site-content .type-jt.hentry.has-post-thumbnail:first-child {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 673px) {
+    .full-width .site-content .type-jt.has-post-thumbnail .entry-header, .full-width .site-content type-jt.hentry.has-post-thumbnail:first-child {
+        margin-top: 0;
+    }
+}
+
+.site-content .type-jt.has-post-thumbnail .entry-header {
+    padding-top: 0;
+}

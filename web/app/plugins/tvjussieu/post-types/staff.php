@@ -134,6 +134,10 @@ if ( !class_exists( 'TVJussieu_Staff' ) ) {
 				return $data;
 			}
 
+			if ( !isset( $postarr['save'] ) || !isset( $postarr['publish'] ) ) {
+				return $data;
+			}
+
 			$data['post_name'] = remove_accents( strtolower( $postarr['staff_firstname'] . '-' . $postarr['staff_lastname'] ) );
 
 			return $data;

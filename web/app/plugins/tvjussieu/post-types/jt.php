@@ -311,7 +311,7 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 				return $data;
 			}
 
-			if ( !isset( $postarr['jt_season'] ) || !isset( $postarr['jt_type'] ) ) {
+			if ( !isset( $postarr['save'] ) || !isset( $postarr['publish'] ) ) {
 				return $data;
 			}
 

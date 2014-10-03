@@ -28,6 +28,17 @@ Text Domain: tvjussieu
     }
 }
 
-.site-content .type-jt.has-post-thumbnail .entry-header {
-    padding-top: 0;
+.single-jt .type-jt.has-post-thumbnail .entry-header {
+    margin-top: 0;
+}
+
+.single-jt .type-jt.has-post-thumbnail .post-thumbnail,
+.home .type-jt.has-post-thumbnail .post-thumbnail {
+    background: none;
+    line-height: 0;
+}
+
+.single-jt .type-jt.has-post-thumbnail .post-thumbnail iframe,
+.home .type-jt.has-post-thumbnail .post-thumbnail iframe {
+    margin-bottom: 0;
 }

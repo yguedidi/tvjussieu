@@ -11,7 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php //twentyfourteen_post_thumbnail(); ?>
+	<?php twentyfourteen_post_thumbnail(); ?>
 
 	<header class="entry-header">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
@@ -43,23 +43,8 @@
 			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-	<div class="entry-content">
-	<?php if ( is_singular() ) :?>
-		<div>
-		<?php the_post_thumbnail(); ?>
-		</div>
-	<?php else : ?>
-		<a href="<?php the_permalink(); ?>">
-		<?php the_post_thumbnail(); ?>
-		</a>
-	<?php endif; // End is_singular() ?>
-	</div>
 
-	<?php if ( is_search() || is_post_type_archive( TVJussieu_Staff::POST_TYPE ) ) : ?>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-	<?php else : ?>
+	<?php if ( is_singular() ) : ?>
 	<div class="entry-content">
 		<?php echo do_shortcode( '[facebook_like_button]' ); ?><br/><br/>
 		<?php

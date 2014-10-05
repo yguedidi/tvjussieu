@@ -41,5 +41,5 @@ bin
 .vagrant
 
 # TV Jussieu
-!web/app/plugins/tvjussieu
+!web/app/mu-plugins/tvjussieu
 !web/app/themes/tvjussieu-twentyfourteen

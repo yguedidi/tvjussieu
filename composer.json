@@ -65,7 +65,7 @@
     "wpackagist-plugin/log-deprecated-notices": "~0.3",
     "wpackagist-plugin/log-viewer": "~14.05",
     "wpackagist-plugin/rewrite-rules-inspector": "~1.2",
-    "wpackagist-plugin/theme-check": "~20131213",
+    "wpackagist-plugin/theme-check": "~20140929",
     "wpackagist-plugin/wordpress-reset": "~1.3"
   },
   "extra": {

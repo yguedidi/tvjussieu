@@ -42,3 +42,13 @@ Text Domain: tvjussieu
 .home .type-jt.has-post-thumbnail .post-thumbnail iframe {
     margin-bottom: 0;
 }
+
+.single-jt .nav-links a {
+    float: left;
+    width: 49%;
+}
+
+.single-jt .nav-links a[rel=next] {
+    float: right;
+    text-align: right;
+}

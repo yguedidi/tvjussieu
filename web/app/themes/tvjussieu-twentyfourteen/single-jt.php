@@ -40,6 +40,7 @@ get_header();
 						next_post_link( '%link', __( '<span class="meta-nav">JT suivant</span>%title', 'tvjussieu' ) );
 					endif;
 					?>
+					<div style="clear: both;"></div>
 				</div><!-- .nav-links -->
 			</nav><!-- .navigation -->
 			<?php

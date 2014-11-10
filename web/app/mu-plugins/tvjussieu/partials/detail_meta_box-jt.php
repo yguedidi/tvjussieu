@@ -33,8 +33,10 @@
 
 		$('input[name=jt_type], select[name=jt_season]').change(function(e) {
 			isJTSpecial = 'jt-special' === $('input[name=jt_type]:checked').val();
+			isInterview = 'interview' === $('input[name=jt_type]:checked').val();
+			isAfterMovie = 'after-movie' === $('input[name=jt_type]:checked').val();
 			isHorsSaison = 'hors-saison' === $('select[name=jt_season]').val();
-			$('input[name=post_title]').prop('required', isHorsSaison || isJTSpecial);
+			$('input[name=post_title]').prop('required', isHorsSaison || isJTSpecial || isInterview || isAfterMovie);
 		}).change();
 	});
 </script>

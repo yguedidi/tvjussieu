@@ -54,6 +54,7 @@
     "wpackagist-plugin/contact-form-7": "~4.0",
     "wpackagist-plugin/facebook": "~1.5",
     "wpackagist-plugin/fourteen-colors": "~1.2",
+    "wpackagist-plugin/really-simple-captcha": "~1.8",
     "wpackagist-plugin/regenerate-thumbnails": "~2.2"
   },
   "require-dev": {

@@ -1,3 +1,15 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*
+!web/app/mu-plugins/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+!web/app/mu-plugins/disallow-indexing.php
+!web/app/mu-plugins/register-theme-directory.php
+!web/app/mu-plugins/bedrock-autoloader.php
+
 # WordPress
 web/wp
 web/.htaccess
@@ -10,22 +22,6 @@ sql-dump-*.sql
 .env
 .env.*
 !.env.example
-
-# Application
-web/app/languages/*
-!web/app/languages/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/.gitkeep
-!web/app/mu-plugins/disallow-indexing.php
-!web/app/mu-plugins/register-theme-directory.php
-!web/app/mu-plugins/bedrock-autoloader.php
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/themes/*
-!web/app/themes/.gitkeep
-web/app/upgrade
-web/app/uploads/*
-!web/app/uploads/.gitkeep
 
 # Vendor (e.g. Composer)
 vendor/*
@@ -43,5 +39,9 @@ puphpet/files/dot/ssh/
 !puphpet/files/dot/ssh/insecure_private_key
 
 # TV Jussieu
+web/app/languages/*
+!web/app/languages/.gitkeep
+web/app/themes/*
+!web/app/themes/.gitkeep
 !web/app/mu-plugins/tvjussieu
 !web/app/themes/tvjussieu-twentyfourteen

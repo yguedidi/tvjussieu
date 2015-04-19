@@ -174,14 +174,18 @@ if ( !class_exists( 'TVJussieu_JT' ) ) {
 					$videos = array();
 					if ( preg_match('#^https?:\/\/www\.youtube\.com\/watch\?v\=(.*)#', $video, $matches) ) {
 						$videos[] = array(
-							'url' => 'http://www.youtube.com/embed/' . $matches[1] . '?autoplay=1&rel=0',
-							'secure_url' => 'https://www.youtube.com/embed/' . $matches[1] . '?autoplay=1&rel=0',
+							'url' => 'https://www.youtube.com/embed/' . $matches[1] . '?autoplay=1',
+							'secure_url' => 'https://www.youtube.com/embed/' . $matches[1] . '?autoplay=1',
 							'type' => 'text/html',
+							'width' => 1280,
+							'height' => 720,
 						);
 						$videos[] = array(
 							'url' => 'http://www.youtube.com/v/' . $matches[1] . '?autohide=1&amp;version=31',
 							'secure_url' => 'https://www.youtube.com/v/' . $matches[1] . '?autohide=1&amp;version=31',
 							'type' => 'application/x-shockwave-flash',
+							'width' => 1280,
+							'height' => 720,
 						);
 						$metas['http://ogp.me/ns#image'] = 'http://img.youtube.com/vi/' . $matches[1] . '/sddefault.jpg';
 					} elseif (preg_match('#^https?:\/\/www\.dailymotion\.com\/video\/([^_]+).*#', $video, $matches)) {

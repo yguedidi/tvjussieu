@@ -39,8 +39,6 @@ puphpet/files/dot/ssh/
 !puphpet/files/dot/ssh/insecure_private_key
 
 # TV Jussieu
-web/app/languages/*
-!web/app/languages/.gitkeep
 web/app/themes/*
 !web/app/themes/.gitkeep
 !web/app/mu-plugins/tvjussieu

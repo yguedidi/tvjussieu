@@ -40,7 +40,8 @@
     "wpackagist-plugin/fourteen-colors": "1.2",
     "wpackagist-plugin/really-simple-captcha": "1.8.0.1",
     "wpackagist-plugin/regenerate-thumbnails": "2.2.4",
-    "wpackagist-plugin/ga-google-analytics": "20150507"
+    "wpackagist-plugin/ga-google-analytics": "20150507",
+    "wpackagist-plugin/google-sitemap-generator": "4.0.8"
   },
   "require-dev": {
     "wpackagist-plugin/debug-bar": "0.8.2",

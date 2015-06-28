@@ -43,4 +43,3 @@ web/app/themes/*
 !web/app/themes/.gitkeep
 !web/app/mu-plugins/tvjussieu
 !web/app/themes/tvjussieu-twentyfourteen
-.rocketeer/logs/
